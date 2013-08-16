@@ -1,0 +1,96 @@
+  body {
+  	border-top: 13px solid black;
+	background: rgba(255,255,255,1);
+}
+
+
+@media (min-width:640px) {
+
+
+body {
+
+	background: rgba(255,255,255,0);
+/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom left, #EEEEEE 0%, #222222 120%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom left, #EEEEEE 0%, #222222 120%);
+	
+/* Opera */ 
+background-image: -o-linear-gradient(bottom left, #EEEEEE 0%, #222222 120%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #EEEEEE), color-stop(1.2, #222222));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom left, #EEEEEE 0%, #222222 120%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top right, #EEEEEE 0%, #222222 120%);
+}
+
+}
+
+ .white {
+	background-color:rgba(255,255,255,0.1);
+	padding-top: 10px;
+} 
+
+
+.top-bar-section ul {
+  	background: black;
+  }
+
+  .opener {
+background-image: url(http://mediacenter.smugmug.com/photos/i-nfHRKw8/0/L/i-nfHRKw8-L.jpg);
+background-position:50% 50%; 
+background-repeat:no-repeat; 
+top:-15px;
+background-size: cover;
+}
+
+h2#title {
+  	font-size: 5em;
+  	text-transform: uppercase;
+  	color: rgba(125,125,125,0.6);
+  	left:0px;
+  	bottom:0px;
+  	margin-top: 550px;
+  }
+
+  * {
+  	font-family: 'Open Sans', sans-serif;
+  	font-weight: 400;
+  }
+
+  h1, h2, h1 *, h2 * {
+  	font-family: 'Oswald', sans-serif;
+  	font-weight: 700;
+  }
+
+  h1 * {
+  	text-transform: uppercase;
+  }
+
+  p {
+  	color: #333;
+  }
+
+  p.lead {
+  	font-size: 2em;
+  	line-height: 1.35em;
+  	padding: 0px;
+  	margin-bottom: 5px;
+  	font-weight: 700;
+  }
+
+  .small {
+  	font-size: .75em;
+  	padding-top: 5px;
+  }
+
+.brightcove {
+	height:300px; max-height:550px; padding-bottom:30px;
+}
