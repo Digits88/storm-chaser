@@ -1,9 +1,7 @@
-stormy
+About stormy
 ======
 We're chasing our dreams!
 
-About
-=====
 This is a giant collection of stuff for our big DP project. 
 
 List of codebase resources

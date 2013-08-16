@@ -65,7 +65,29 @@
 	<div class="row">
 		<div class="large-5 columns white brightcove">
 
-		<embed src="http://c.brightcove.com/services/viewer/federated_f8/934052406" bgcolor="#FFFFFF" flashVars="videoId=1880980694001&playerId=934052406&viewerSecureGatewayURL=https://console.brightcove.com/services/amfgateway&servicesURL=http://services.brightcove.com/services&cdnURL=http://admin.brightcove.com&domain=embed&autoStart=false&" base="http://admin.brightcove.com" name="flashObj" width="500" height="500" seamlesstabbing="false" type="application/x-shockwave-flash" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+		<!-- Start of Brightcove Player -->
+
+<div style="display:none">
+
+</div>
+
+<!--
+By use of this code snippet, I agree to the Brightcove Publisher T and C 
+found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+-->
+
+<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+
+<object type="application/x-shockwave-flash" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=600&amp;height=335&amp;flashID=myExperience1880980694001&amp;bgcolor=%23FFFFFF&amp;playerID=785156240001&amp;playerKey=AQ~~%2CAAAAADe65VU~%2CG496cZ36A_VFjiTiaQz8PLxJlBRNuww6&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;%40videoPlayer=1880980694001&amp;autoStart=&amp;debuggerID=&amp;startTime=1376673586831" id="myExperience1880980694001" width="600" height="335" class="BrightcoveExperience" seamlesstabbing="undefined"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="transparent"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF"></object>
+
+<!-- 
+This script tag will cause the Brightcove Players defined above it to be created as soon
+as the line is read by the browser. If you wish to have the player instantiated only after
+the rest of the HTML is processed and the page load is complete, remove the line.
+-->
+<script type="text/javascript">brightcove.createExperiences();</script>
+
+<!-- End of Brightcove Player -->
 
 		<hr>
 		</div>
