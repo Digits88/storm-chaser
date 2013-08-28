@@ -36,6 +36,10 @@ background-image: -webkit-linear-gradient(bottom left, #EEEEEE 0%, #222222 120%)
 background-image: linear-gradient(to top right, #EEEEEE 0%, #222222 120%);
 }
 
+
+nav.top-bar {
+  margin: 0em;
+}
 }
 
  .white {
@@ -72,7 +76,7 @@ h2#title {
   	font-weight: 400;
   }
 
-  h1, h2, h1 *, h2 * {
+  h1, h2, h3, h1 *, h2 *, h3 * {
   	font-family: 'Oswald', sans-serif;
   	font-weight: 700;
   }
@@ -92,6 +96,10 @@ h2#title {
   	margin-bottom: 5px;
   	font-weight: 700;
   }
+
+  a, a *, * a {
+    color: crimson;
+  } 
 
   .small {
   	font-size: .75em;
