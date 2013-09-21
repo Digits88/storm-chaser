@@ -1,2 +1,3 @@
 templates/fski/
 !.gitignore
+.DS_Store
