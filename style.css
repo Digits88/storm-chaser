@@ -40,10 +40,11 @@ nav.top-bar {
     top:0;
     left:0;
     width:100%;
+    margin-top:-300px;
 }
 
 .overlaywrap div.captionoverlay {
-    width:80%;
+    width:100%;
     padding:20px;
     margin:0 auto;
     z-index: 60;
@@ -51,10 +52,10 @@ nav.top-bar {
 
 .overlaywrap div.captionwrap {
     position: absolute;
-    bottom: 0;
+    bottom: 250px;
     width:100%;
     z-index:20;
-    background:rgba(0,0,0,0.6);
+    /* background:rgba(0,0,0,0.6); */
 }
 
 .white {
@@ -63,24 +64,34 @@ nav.top-bar {
 } 
 
 .top-bar-section ul {
-  	background: black;
+    background: black;
 }
 
 .opener {
-    background-image: url(http://mediacenter.smugmug.com/photos/i-nfHRKw8/0/L/i-nfHRKw8-L.jpg);
+    background-image: url('./img/chaser-01.jpg');
     background-position:50% 50%; 
     background-repeat:no-repeat; 
-    margin-top:-45px;
+    margin-top:-15px;
     background-size: cover;
+    height:100%;
+    width:100%;
+    margin: 0 auto;
+    padding:0 auto;
 }
 
-h2#title {
-  	font-size: 5em;
-  	text-transform: uppercase;
-  	color: rgba(125,125,125,0.7);
-  	left:0px;
-  	bottom:0px;
-  	margin-top: 570px;
+h2.title {
+    font-size: 5em;
+    text-transform: uppercase;
+    color: rgba(215,215,245,0.8);
+}
+
+h2.title1 {
+    margin: 640px 0 20px 1200px;
+}
+
+h2.title2 {
+    margin: 0 0 20px 20px;
+    opacity:0.2;
 }
 
 * {
@@ -105,7 +116,7 @@ p.lead {
   	font-size: 2em;
   	line-height: 1.35em;
   	padding: 0px;
-  	margin-bottom: 5px;
+  	margin-bottom: 15px;
   	font-weight: 700;
 }
 
