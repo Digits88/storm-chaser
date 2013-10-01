@@ -17,7 +17,7 @@
 <body>
 
 <div class="fixed">
-	<nav class="top-bar" data-options="is_hover:true">
+	<nav class="top-bar fixed" data-options="is_hover:true,custom_back_text:false">
 		<ul class="title-area">
 			<li class="name"><h1><a href="#">Storm Chaser</a></h1></li>
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -53,7 +53,6 @@
 <div class="wrapper">
 	<div class="opener columns">
 		<h2 class="title title1">Proximity</h2>
-		<!-- <hr> -->
 	</div>
 </div>
 
@@ -256,7 +255,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script src="./playground/jquery.inview/jquery.inview.min.js"></script>
 
-<script src="./js/foundation.min.js"></script>
+<script src="./js/foundation/foundation.js"></script>
+<script src="./js/foundation/foundation.dropdown.js"></script>
+<script src="./js/foundation/foundation.topbar.js"></script>
+<script src="./js/foundation/foundation.reveal.js"></script>
+<script src="js/foundation/foundation.section.js"></script>
 
 <style type="text/css">
 	p, #white, hr, div.opener, iframe, img, h2#title
@@ -304,10 +307,8 @@
 	<!--
 
 	
-<script src="js/foundation/foundation.js"></script>
-<script src="js/foundation/foundation.dropdown.js"></script>
-<script src="js/foundation/foundation.topbar.js"></script>
-<script src="js/foundation/foundation.reveal.js"></script>
+<script src="./js/foundation.min.js"></script>
+
 
 	<script src="js/foundation/foundation.alerts.js"></script>
 
@@ -326,7 +327,7 @@
 
 	
 
-	<script src="js/foundation/foundation.section.js"></script>
+	
 
 	<script src="js/foundation/foundation.tooltips.js"></script>
 
@@ -342,7 +343,6 @@
 
 	<script>
 		$(document).foundation();
-		$(document).foundationTopBar();
 	</script>
 </body>
 </html>
