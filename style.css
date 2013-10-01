@@ -79,6 +79,10 @@ nav.top-bar {
     padding:0 auto;
 }
 
+.top-bar-section * {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
 h2.title {
     font-size: 5em;
     text-transform: uppercase;
@@ -95,7 +99,7 @@ h2.title2 {
 }
 
 * {
-  	font-family: 'Merriweather', sans-serif;
+  	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
   	font-weight: 400;
 }
 
@@ -112,14 +116,13 @@ p {
   	color: #333;
     font-size:1.1em;
     line-height:2.2em;
-    text-indent:1.6em;
+    text-indent:3em;
     margin-bottom:.25em;
 }
 
 p.lead {
-  	font-size: 2em;
+  	font-size: 1.5em;
   	line-height: 1.6em;
-  	margin-left: -2em;
   	margin-bottom: 1em;
   	font-weight: 700;
     text-indent:0;
@@ -146,13 +149,15 @@ p.byline span.strong {
     font-size:1em;
 }
 
-.photorow hr {
-    margin:20px;
+.photorow {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .caption {
+    text-indent: 0;
   	font-size: 1em;
-    line-height:1.6em;
+    line-height:1.7em;
   	font-weight:400;
     font-style: italic;
 }
@@ -204,4 +209,8 @@ blockquote:before, blockquote:after {
 
 .star hr:nth-child(3) {
     border-color: #ddd;
+}
+
+.reveal-modal {
+    position:fixed;
 }
