@@ -95,7 +95,7 @@ h2.title2 {
 }
 
 * {
-  	font-family: 'Open Sans', sans-serif;
+  	font-family: 'Merriweather', sans-serif;
   	font-weight: 400;
 }
 
@@ -110,14 +110,19 @@ h1 * {
 
 p {
   	color: #333;
+    font-size:1.1em;
+    line-height:2.2em;
+    text-indent:1.6em;
+    margin-bottom:.25em;
 }
 
 p.lead {
   	font-size: 2em;
-  	line-height: 1.35em;
-  	padding: 0px;
-  	margin-bottom: 15px;
+  	line-height: 1.6em;
+  	margin-left: -2em;
+  	margin-bottom: 1em;
   	font-weight: 700;
+    text-indent:0;
 }
 
 a, a *, * a, a:visited, a:visited *, * a:visited {
@@ -141,9 +146,15 @@ p.byline span.strong {
     font-size:1em;
 }
 
-.small {
-  	font-size: .75em;
-  	padding-top: 5px;
+.photorow hr {
+    margin:20px;
+}
+
+.caption {
+  	font-size: 1em;
+    line-height:1.6em;
+  	font-weight:400;
+    font-style: italic;
 }
 
 .brightcove {
