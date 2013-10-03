@@ -12,17 +12,20 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 
 	<script src="./js/vendor/custom.modernizr.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Open-Sans:700|Oswald:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700,400|Merriweather:400italic,400,700|Open-Sans:700|Oswald:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div class="fixed">
 	<nav class="top-bar fixed" data-options="is_hover:true,custom_back_text:false">
 		<ul class="title-area">
-			<li class="name"><h1><a href="#">Storm Chaser</a></h1></li>
+			<li class="name"><a href="http://www.denverpost.com"><img src="http://extras.denverpost.com/media/png/2013/the-denver-post-logo-30.png" style="margin:2% 5% 0 5%;" border="0"></a></li>
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 		</ul>
 		<section class="top-bar-section">
+			<ul class="left" style="margin-left:40px;">
+				<li><a href="#">Storm Chasers</a></li>
+			</ul>
 			<ul class="right">
 				<li class="divider"></li>
 				<li class="has-dropdown"><a href="#">Chapters</a>
@@ -42,7 +45,6 @@
 						<li><a href="#" data-reveal-id="peoplePaulS">Paul Samaras</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Story mode</a></li>
 				<li><a href="#">Credits</a></li>
 			</ul>
 		</section>
@@ -50,22 +52,11 @@
 </div>
 <!-- End Top Bar -->
 
-<div class="wrapper">
-	<div class="opener columns">
+<!-- <div class="wrapper"> -->
+	<div class="opener columns" style="margin-bottom:30px;">
 		<h2 class="title title1">Proximity</h2>
 	</div>
-</div>
-
-<div class="large-12 columns" style="background: black; padding-bottom:40px; padding-top: 40px; margin-bottom: 50px;">
-	<div class="large-9 large-centered columns">
-		<h3 style="color:white;margin:0;">
-			<a href="#">Storm Chaser:</a> The story of Tim Samaras
-		</h3>
-		<p class="byline"><span class="strong">By Kevin Simpson</span>, The Denver Post</p>
-	</div>
-	<div class="clear" style="margin-bottom:15px;"></div>
-
-</div>
+<!-- </div> -->
 
 <div class="row">
 	<div class="large-8 columns">
@@ -75,7 +66,7 @@
 </div>
 <div class="row photorow">
 	<div class="large-5 columns">
-		<img src="./img/chaser-02.jpg">
+		<a href="#" onclick="revealone();"><img src="./img/chaser-02.jpg"></a>
 	</div>
 	<div class="large-3 columns pull-4 white">
 		<p class="caption">A storm-chasing truck equipped with sensors and stuff. We could say something about it here if we felt like it. But this is just dummy text, so we probably won't. (Photo by some guy at TWISTEX, Special to The Denver Post)</p>
@@ -234,12 +225,17 @@
 
 <br>
 
-<div class="small-12 columns" style="background: black; color: white; padding-bottom: 30px; text-align: center;">
-	<br><hr style="border-color: white;"><a href="http://www.denverpost.com" color="white"><img src="http://extras.denverpost.com/media/png/2013/the-denver-post-logo-20.png" style="clear:both;margin-bottom:5px;" border="0"></a>
-	<p class="small" style="color:white;">Copyright &copy; 2013</p></div>
+<div class="small-12 columns" id="footer-bar" style="background: black; color: white; padding: 10px 0 10px 20px; text-align: center;">
+	<p class="small" style="float:left;color:white;">Copyright <span style="top:.18em;position:relative;font-size:1.1em;">&copy;</span> 2013</p>
+	<div class="clear"></div>
 </div>
 
-<div id="peopleTimS" class="reveal-modal">
+<div id="next-chapter">
+	<h2>Chapter 2</h2>
+</div>
+
+
+<div id="peopleTimS" class="reveal-modal people-modal">
 	<h2>Tim Samaras</h2>
 	<img class="bio-mug" src="./img/tim-samaras-1.jpg" style="float:right;width:120px;">
 	<p>This is the guy, the lead guy.</p>
@@ -249,6 +245,23 @@
 		<li>Here's a link to where he appears in a video</li>
 		<li>Here's another link to some other thing</li>
 	</ul>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="slides-1" class="reveal-modal slides-modal">
+	<link rel="stylesheet" href="http://extras.mnginteractive.com/live/partners/MediaCenter/embedded_galleries/mc_embed_styles.css" type="text/css" />
+	<script src="http://extras.mnginteractive.com/live/partners/MediaCenter/embedded_galleries/mc_embed.js"></script>
+	<div id="mc-embed-container"></div>
+	<div class="clear" style="margin-bottom:10px;"></div>
+	<script>
+		function createSlidesOne() {
+			mc_embed_gallery = new MCGallery({
+				url : 'http://photos.denverpost.com/2013/10/01/photos-regis-dominates-5a-colorado-state-golf-championships/',
+				captionHeight : '85px',
+				parentContainer: 'mc-embed-container'
+			});
+		}
+	</script>
 	<a class="close-reveal-modal">&#215;</a>
 </div>
 
@@ -267,6 +280,11 @@
 </style>
 <script>
 	$(document).foundation('reveal', {animation: 'fade'});
+
+	function revealone() {
+		$('#slides-1').foundation('reveal', 'open');
+		createSlidesOne();
+	}
 
 	var derp1 = function(){ $('p, iframe, img, #white, blockquote, hr').bind('inview', function(event, visible) {
 		if (visible) {
@@ -302,6 +320,17 @@
 		}
     })};
     derp5();
+
+    var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible) {
+		if (visible) {
+			$('#next-chapter').stop().animate({ "bottom": "0" }, 1500);
+			$('#next-chapter').animate({ opacity: 1 }, 200, "linear");
+		} else {
+			$('#next-chapter').stop().css( "bottom", "-1.5em" );
+			$('#next-chapter').stop().animate({ opacity: 0 }, 200);
+		}
+    })};
+    derp2();
 </script>
 
 	<!--
