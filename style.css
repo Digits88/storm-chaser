@@ -27,7 +27,11 @@ nav.top-bar {
     margin: 0 auto;
     overflow: hidden;
 }
-
+.opener .openercaption {
+    position:absolute;
+    top:100%;
+    right:10%;  
+}
 .clear {
     width:100%;
     height:0;
@@ -362,7 +366,9 @@ blockquote span.attrib {
         font-weight: 700;
         text-indent:0;
     }
-
+    .photorow img {
+        margin-bottom:.5em;
+    }
     .caption {
         text-indent: 0;
         font-size: .7em;
