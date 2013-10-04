@@ -13,11 +13,10 @@ nav.top-bar {
     margin-bottom: 0px;
 }
 
-.wrapper {
-    background-color: #000;
-    width: 100%;
+#logoimg {
+    margin:2% 5% 0 5%;
+    height:30px;
 }
-
 .opener {
     background-image: url('./img/chaser-06.jpg');
     background-position:50% 90%; 
@@ -26,7 +25,7 @@ nav.top-bar {
     height:90%;
     width:100%;
     margin: 0 auto;
-    position: relative;
+    overflow: hidden;
 }
 
 .clear {
@@ -76,28 +75,63 @@ nav.top-bar {
     background: black;
 }
 
-.top-bar-section * {
+.top-bar-section ul li a {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+    text-transform:uppercase;
+    font-weight:400;
 }
 
 .top-bar .toggle-topbar.menu-icon a span {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
     color: #FFFFFF;
-    font-weight: bold;
 }
 
 h2.title {
-    font-size: 6em;
+    font-size: 7em;
+    line-height: 1em;
     text-transform: uppercase;
-    color: rgba(215,215,225,0.8);
+    color: rgba(245,245,255,0.8);
+    margin:0;
+    height:0;
 }
 
-h2.title1 {
+h3.titlespan {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1em;
+    text-transform:none;
+    color: rgba(245,245,255,0.8);
+    margin:0;
+    height:0;
+}
+
+.opener div.title {
     width:100%;
+    height:100%;
+    position: relative;
+}
+
+div#title1 {
+    width:100%;
+    height:50%;
+    left:50%;
     text-align: center;
-    top: 25%;
-    left:0;
-    position:absolute;
+    margin: 0 auto;
+    position:relative;
+    overflow:visible;
+}
+
+div#title1 h3.titlespan {
+    bottom:56%;
+    position: absolute;
+    left:-1.501em;
+}
+
+div#title1 h2.title {
+    top:55%;
+    position: absolute;
+    left:-1.6em;
 }
 
 h2.title2 {
@@ -122,7 +156,7 @@ h1 * {
 p, .row ul, .row li, .reveal-modal ul, .reveal-modal li {
   	color: #333;
     font-size:1.05em;
-    line-height:2.2em;
+    line-height:2em;
     text-indent:3em;
     margin-bottom:.25em;
 }
@@ -162,33 +196,53 @@ p.byline {
     font-size:.8em;
 }
 
-p.byline span.strong {
-    font-size:1em;
-}
-
 .photorow {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
 .caption {
-    text-indent: 0;
   	font-size: 1em;
-    line-height:1.7em;
-  	font-weight:400;
-    font-style: italic;
+    line-height:2em;
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: default; 
+    text-indent:0;
 }
 
-.brightcove {
-	height:300px; max-height:550px; padding-bottom:30px;
+.caption span.photocred {
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size:.9em;
+    line-height:2em;
+    font-style: italic;
+    letter-spacing:.75px;
+    position: relative;
+    cursor: default; 
+    text-indent:0;
+    clear:left;
 }
 
 blockquote {
-	color:#000;
 	font-size: 1.5em;
-	line-height: 1.2em;
-	font-weight:700;
-	padding-bottom: 15px;
+	line-height: 1.4em;
+    color: #222222;
+    padding: 1em 0;
+    margin: 0;
+    font-family: 'Alegreya', Georgia, Times, serif;
+    font-weight: 900;
+    font-style: normal;
+    cursor: default; 
+    text-indent:0;
+    letter-spacing:1px;
+    border:none;
 }
 
 blockquote:before {
@@ -202,30 +256,25 @@ blockquote:after {
 }
 
 blockquote:before, blockquote:after {
+    font-family: 'Merriweather', Georgia, Times, serif;
+    font-weight: 900;
+    color: #528ad0;
     line-height: 0em;
-    font-size: 2em;
+    font-size: 2.7em;
     position: relative;
-    top:15px;
-    opacity: .3;
+    top:.5em;
+    opacity: .5;
 }
 
-.strong {
-	font-weight: 700;
-	font-size: 1.4em;
-}
-
-.star hr {
-    border-color:#000;
-    border-width: 3px;
-    width: 100%;
-}
-
-.star hr:nth-child(2) {
-    border-color: #555;
-}
-
-.star hr:nth-child(3) {
-    border-color: #ddd;
+blockquote span.attrib {
+    margin-left:4em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size:.75em;
+    line-height:1.9em;
+    font-style: italic;
+    letter-spacing:1px;
+    position: absolute;
 }
 
 .reveal-modal {
@@ -241,7 +290,7 @@ blockquote:before, blockquote:after {
     width:50%;
     margin-left:0;
     left:25%;
-    top:20%;
+    top:10%;
 }
 #next-chapter {
     position: fixed;
@@ -277,23 +326,25 @@ blockquote:before, blockquote:after {
 
 @media (max-width:640px) {
 
-    .large-2 {
-        display: none;
+    #logoimg {
+        margin-top:3.5%;
+        height:22px;
     }
 
     h2.title {
-        font-size: 3em;
-        text-transform: uppercase;
-        color: rgba(215,215,245,0.8);
+        font-size: 3.5em;
     }
 
-    h2.title1 {
-        margin: 80% 0 0;
+    h3.titlespan {
+        font-size: 1.5em;
     }
 
-    h2.title2 {
-        margin: 0 0 5% 5%;
-        opacity:0.2;
+    div#title1 h3.titlespan {
+        left:-1.05em;
+    }
+
+    div#title1 h2.title {
+        left:-1.4em;
     }
 
     p, .row ul, .row li, .reveal-modal ul, .reveal-modal li {
