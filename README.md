@@ -1,13 +1,15 @@
-About stormy
+About storm-chaser
 ======
-We're chasing our dreams!
+This is The Denver Post's first foray into truly mobile-first responsive, interactive storytelling on the web. Inspired by projects like Snow Fall, The Jockey and Out in the Great Alone, our goal is simply to create an immersive narrative that works across devices and tells a story with all relevant elements included as intuitively as possible.
 
 This is a giant collection of stuff for our big DP project. 
+
+Story by Kevin Simpson
+Photos by Kathryn Scott Osler, The Denver Post; Ed Grubb, TWISTEX; other contributors
+Design by Daniel J. Schneider and Jeff Neumann
 
 List of codebase resources
 -----
 * [Foundation](http://foundation.zurb.com)
-* [Arctext.js](http://tympanus.net/codrops/2012/01/24/arctext-js-curving-text-with-css3-and-jquery/)
-* [Textualizer](http://kiro.me/projects/textualizer.html)
 * [Mozilla Developer Network for CSS3, JS, HTML5 stuffs](https://developer.mozilla.org/‎)
-* [Css gradient builder](http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/) for IE10. It works for all browsers!
+* [jquery.inview](https://github.com/protonet/jquery.inview)
