@@ -14,8 +14,8 @@ nav.top-bar {
 }
 
 #logoimg {
-    margin:2% 5% 0 5%;
-    height:30px;
+    margin:.5em 0 0 .5em;
+    height:28px;
 }
 .opener {
     background-image: url('./img/chaser-06.jpg');
@@ -24,7 +24,7 @@ nav.top-bar {
     background-size: cover;
     height:90%;
     width:100%;
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
     margin-bottom:2em;
 }
@@ -79,13 +79,29 @@ nav.top-bar {
 .top-bar-section ul {
     background: black;
 }
+.top-bar-section ul li.bottom a {
+    padding:.5em .8em;
+}
 
 .top-bar-section ul li a {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
-    text-transform:uppercase;
+    text-transform: none;
     font-weight:400;
+    font-size:1em;
 }
-
+.top-bar-section ul li.top-top > a {
+    text-transform:uppercase;
+    font-size:.9em;
+}
+.top-bar-section ul li.social a {
+    padding:0 .5em;
+}
+.top-bar-section ul li.social.firstsocial {
+    padding-left:1em;
+}
+.top-bar-section ul li.social a:last-child {
+    padding-right:1em;
+}
 .top-bar .toggle-topbar.menu-icon a span {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
     color: #FFFFFF;
@@ -150,7 +166,7 @@ h2.title2 {
 }
 
 h1, h2, h3, h1 *, h2 *, h3 * {
-  	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif !important;
+  	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
   	font-weight: 700;
 }
 
@@ -161,17 +177,48 @@ p {
     text-indent:3em;
 }
 
-p, .row ul, .row li, .reveal-modal ul, .reveal-modal li {
+p, .row li, .reveal-modal li {
   	color: #333;
     font-size:1.05em;
     line-height:2em;
     margin-bottom:.25em;
     list-style:circle inside;
 }
-.infobox p, ul, li {
+.infobox p, .infobox li {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+    text-indent: 0;
+    line-height:1.6em;
+    margin-bottom:.4em;
 }
-
+.infoxbox ul {
+    margin-bottom:.25em;
+}
+.infobox h2 {
+    margin:0 0 .25em;
+}
+.infobox .bio-mug {
+    float:right;
+    width:8em;
+    margin:.5em .5em 1em 1em;
+}
+.reveal-modal .close-reveal-modal {
+    font-size: 1.375em;
+    line-height: 1;
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-border-radius: .6em;
+    -moz-border-radius: .6em;
+    border-radius: .6em;
+    border: 2px solid #eee;
+    width: 1.2em;
+    height: 1.2em;
+    padding: .1em 0 0 .2em;
+    background: #547eb8;
+}
 p.lead {
   	font-size: 1.4em;
   	line-height: 1.6em;
@@ -225,7 +272,6 @@ p.byline {
     text-indent:0;
     margin-bottom:1em;
 }
-
 .caption span.photocred {
     color: #222222;
     padding: 0;
@@ -246,8 +292,8 @@ blockquote {
 	font-size: 1.5em;
 	line-height: 1.4em;
     color: #222222;
-    padding: 1em 0;
-    margin: 0;
+    padding: .5em 0;
+    margin: .5em 0;
     font-family: 'Alegreya', Georgia, Times, 'Times New Roman', serif;
     font-weight: 900;
     font-style: normal;
@@ -268,9 +314,9 @@ blockquote:after {
 }
 
 blockquote:before, blockquote:after {
-    font-family: 'Alegreya', Georgia, Times, 'Times New Roman', serif;
-    font-weight: 900;
-    color: #528ad0;
+    font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    color: #547eb8;
     line-height: 0em;
     font-size: 2.7em;
     position: relative;
@@ -278,7 +324,7 @@ blockquote:before, blockquote:after {
     opacity: .5;
 }
 
-blockquote span.attrib {
+blockquote div.attrib {
     margin-left:4em;
     font-family: 'Merriweather', Helvetica, Arial, sans-serif !important;
     font-weight: 400;
@@ -287,6 +333,7 @@ blockquote span.attrib {
     font-style: italic;
     letter-spacing:1px;
     position: absolute;
+    display:inline;
 }
 
 .reveal-modal {
@@ -295,8 +342,8 @@ blockquote span.attrib {
 .people-modal {
     width:40%;
     margin-left:0;
-    left:25%;
-    top:20%;
+    left:30%;
+    top:15%;
 }
 .slides-modal {
     width:50%;
@@ -304,43 +351,59 @@ blockquote span.attrib {
     left:25%;
     top:10%;
 }
-#next-chapter {
+div#next-chapter {
     position: fixed;
-    background-color: #000;
+    background-color: #FFFFFF;
     padding: 10px 20px;
-    bottom:-1.5em;
+    bottom:-1.3em;
     right:0;
     opacity:0;
-    -moz-box-shadow:    -1px -1px 1px 0px #eee;
-    -webkit-box-shadow: -1px -1px 1px 0px #eee;
-    box-shadow:         -1px -1px 1px 0px #eee;
+    -moz-box-shadow:    -1px -2px 2px 0px #aaa;
+    -webkit-box-shadow: -1px -2px 2px 0px #aaa;
+    box-shadow:         -1px -2px 2px 0px #aaa;
 }
-#next-chapter h2 {
-    font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+div#next-chapter h2 {
+    font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-style: italic;
     font-size:1.6em;
     line-height:1em;
-    color:#eee;
-    margin:8px 40px 8px 0;
+    color:#222222;
+    margin:.3em 1.7em .3em .5em;
+    letter-spacing: .02em;
 }
-#next-chapter:after {
+div#next-chapter:after {
     width: 0; 
     height: 0;
     position:absolute;
     content:"";
-    top:1.3em;
-    right:1em;
+    top:1.4em;
+    right:1.5em;
     border-width:.6em 0 .6em 1.2em;
     border-style: solid;
-    border-color: transparent #eee;
+    border-color: transparent #222;
 }
 
-@media (max-width:640px) {
+div#footer-bar {
+    background: black;
+    color: white;
+    padding: .6em 0 .6em 1.6em;
+}
+div#footer-bar ul.social {
+    margin:0 auto;
+    position: absolute;
+    left:45%;
+    top:.5em;
+}
+div#footer-bar ul.social li {
+    padding:0 .5em;
+    float:left;
+    display: inline-block;
+}
+@media (max-width:940px) {
 
     #logoimg {
-        margin-top:3.5%;
-        height:22px;
+        margin-top:1em;
+        height:20px;
     }
     .opener {
         margin-bottom: 1em;
@@ -348,7 +411,17 @@ blockquote span.attrib {
     h2.title {
         font-size: 3.5em;
     }
-
+    .top-bar-section ul li.social a {
+        padding:1em 40%;
+    }
+    .top-bar-section ul li.social {
+        display: inline-block;
+        float:left;
+        width:25%;
+    }
+    .top-bar-section ul li.social.firstsocial {
+        padding-left:0;
+    }
     h3.titlespan {
         font-size: 1.5em;
     }
@@ -360,16 +433,18 @@ blockquote span.attrib {
     div#title1 h2.title {
         left:-1.4em;
     }
+    .infobox .bio-mug {
+        width:6em;
+    }
     p {
         text-indent:2em;
     }
-    p, .row ul, .row li, .reveal-modal ul, .reveal-modal li {
+    p, .row li, .reveal-modal li {
         color: #333;
         font-size:.8em;
         line-height:2em;
         margin-bottom:.25em;
     }
-
     p.lead {
         font-size: 1em;
         line-height: 1.7em;
@@ -387,7 +462,13 @@ blockquote span.attrib {
         font-weight:400;
         font-style: italic;
     }
-
+    blockquote {
+        margin-bottom:1.5em;
+    }
+    blockquote div.attrib {
+        right:1.5em;
+        bottom:.5em;
+    }
     .people-modal {
         width:90%;
         margin-left:0;
@@ -401,5 +482,7 @@ blockquote span.attrib {
         left:5%;
         top:5%;
     }
-
+    div#footer-bar ul.social {
+        display:none;
+    }
 }

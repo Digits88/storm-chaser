@@ -20,32 +20,37 @@
 	<nav class="top-bar fixed" data-options="is_hover:true,custom_back_text:false">
 		<ul class="title-area">
 			<li class="name"><a href="http://www.denverpost.com"><img src="http://extras.denverpost.com/media/png/2013/the-denver-post-logo-30.png" id="logoimg" border="0"></a></li>
-			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 		</ul>
 		<section class="top-bar-section">
-			<ul class="left" style="margin-left:40px;">
-				<li><a href="#">Storm Chasers</a></li>
-			</ul>
 			<ul class="right">
 				<li class="divider"></li>
-				<li class="has-dropdown"><a href="#">Chapters</a>
+				<li class="has-dropdown top-top"><a href="#">Chapters</a>
 					<ul class="dropdown">
-						<li><a href="chapter2.html">Chapter 2</a></li>
-						<li><a href="chapter3.html">Chapter 3</a></li>
-						<li><a href="chapter4.html">Chapter 4</a></li>
-						<li><a href="chapter5.html">Chapter 5</a></li>
-						<li><a href="chapter6.html">Chapter 6</a></li>
-						<li><a href="chapter7.html">Chapter 7</a></li>
+						<li class="bottom"><a href="chapter1.html">1: Proximity</a></li>
+						<li class="bottom"><a href="chapter2.html">2: Forecast</a></li>
+						<li class="bottom"><a href="chapter3.html">Chapter 3</a></li>
+						<li class="bottom"><a href="chapter4.html">Chapter 4</a></li>
+						<li class="bottom"><a href="chapter5.html">Chapter 5</a></li>
+						<li class="bottom"><a href="chapter6.html">Chapter 6</a></li>
+						<li class="bottom"><a href="chapter7.html">Chapter 7</a></li>
 					</ul>
 				</li>
-				<li class="has-dropdown"><a href="#">People</a>
+				<li class="divider"></li>
+				<li class="has-dropdown top-top"><a href="#">People</a>
 					<ul class="dropdown">
-						<li><a href="#" data-reveal-id="peopleTimS">Tim Samaras</a></li>
-						<li><a href="#" data-reveal-id="peopleCarlY">Carl Young</a></li>
-						<li><a href="#" data-reveal-id="peoplePaulS">Paul Samaras</a></li>
+						<li class="bottom"><a href="#" data-reveal-id="peopleTimS">Tim Samaras</a></li>
+						<li class="bottom"><a href="#" data-reveal-id="peopleCarlY">Carl Young</a></li>
+						<li class="bottom"><a href="#" data-reveal-id="peoplePaulS">Paul Samaras</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Credits</a></li>
+				<li class="divider"></li>
+				<li class="top-top"><a href="#">Credits</a></li>
+				<li class="divider"></li>
+				<li class="top-top social firstsocial"><a href="#"><img src="./img/icon-twitter.png"></a></li>
+				<li class="top-top social"><a href="#"><img src="./img/icon-facebook.png"></a></li>
+				<li class="top-top social"><a href="#"><img src="./img/icon-google-plus.png"></a></li>
+				<li class="top-top social"><a href="#"><img src="./img/icon-comments.png"></a></li>
 			</ul>
 		</section>
 	</nav>
@@ -96,7 +101,7 @@
 <!-- Start blockquote. -->
 <div class="row">
 	<div class="large-8 push-2 columns">
-		<blockquote>OK, we’ve gotta be careful in case this thing wraps up,” he said, fearing that the tornado could initiate a gradual left turn. “I would slow up here, ’cause if this thing started moving to the north, we’re in trouble. Slow up. We’re almost right along side of it here. Slow up! Let the thing go off to the east a little bit, see if that thing transverses us.<span class="attrib">Tim Samaras</span></blockquote>
+		<blockquote>OK, we’ve gotta be careful in case this thing wraps up,” he said, fearing that the tornado could initiate a gradual left turn. “I would slow up here, ’cause if this thing started moving to the north, we’re in trouble. Slow up. We’re almost right along side of it here. Slow up! Let the thing go off to the east a little bit, see if that thing transverses us.<div class="attrib">Tim Samaras</div></blockquote>
 	</div>
 </div>
 <!-- End blockquote. -->
@@ -214,19 +219,25 @@
 
 <br>
 
-<div class="small-12 columns" id="footer-bar" style="background: black; color: white; padding: 10px 0 10px 20px; text-align: center;">
+<div class="small-12 columns" id="footer-bar">
 	<p class="small" style="float:left;color:white;">Copyright <span style="top:.18em;position:relative;font-size:1.1em;">&copy;</span> 2013</p>
+	<ul class="social">
+		<li><a href="#"><img src="./img/icon-twitter.png"></a></li>
+		<li><a href="#"><img src="./img/icon-facebook.png"></a></li>
+		<li><a href="#"><img src="./img/icon-google-plus.png"></a></li>
+		<li><a href="#"><img src="./img/icon-comments.png"></a></li>
+	</ul>
 	<div class="clear"></div>
 </div>
 
 <div id="next-chapter">
-	<h2>Chapter 2</h2>
+	<h2>Forecast|2</h2>
 </div>
 
 
-<div id="peopleTimS" class="reveal-modal people-modal">
+<div id="peopleTimS" class="reveal-modal people-modal infobox">
+	<img class="bio-mug" src="./img/tim-samaras-1.jpg">
 	<h2>Tim Samaras</h2>
-	<img class="bio-mug" src="./img/tim-samaras-1.jpg" style="float:right;width:120px;">
 	<p>This is the guy, the lead guy.</p>
 	<p>We'll write some stuff about him here and then below we'll have links down below to more stuff.</p>
 	<ul>
@@ -271,7 +282,7 @@
 	{opacity: 0; }
 </style>
 <script>
-	$(document).foundation('reveal', {animation: 'fade'});
+	$(document).foundation('reveal', {animation: 'fade', animationspeed: 200});
 
 	function revealone() {
 		$('#slides-1').foundation('reveal', 'open');
@@ -280,7 +291,7 @@
 
 	var derp1 = function(){ $('p, iframe, img, #white, blockquote, hr').bind('inview', function(event, visible) {
 		if (visible) {
-			$(this).stop().animate({ opacity: 1 }, 500);
+			$(this).stop().animate({ opacity: 1 }, 350);
 			console.log('derp1');
 		}
     })};
@@ -288,7 +299,7 @@
 
 	var derp2 = function(){ $('div.opener').bind('inview', function(event, visible) {
 		if (visible) {
-			$(this).stop().animate({ opacity: 1}, 2500);
+			$(this).stop().animate({ opacity: 1}, 1500);
 		}
     })};
     derp2();
@@ -315,11 +326,11 @@
 
     var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible) {
 		if (visible) {
-			$('#next-chapter').stop().animate({ "bottom": "0" }, 1500);
-			$('#next-chapter').animate({ opacity: 1 }, 200, "linear");
+			$('#next-chapter').stop().animate({ "bottom": "0" }, 800);
+			$('#next-chapter').animate({ opacity: 1 }, 100);
 		} else {
-			$('#next-chapter').stop().css( "bottom", "-1.5em" );
-			$('#next-chapter').stop().animate({ opacity: 0 }, 200);
+			$('#next-chapter').stop().css( "bottom", "-1.3em" );
+			$('#next-chapter').stop().animate({ opacity: 0 }, 100);
 		}
     })};
     derp2();
