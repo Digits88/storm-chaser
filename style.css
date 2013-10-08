@@ -226,6 +226,11 @@ p.lead {
   	font-weight: 700;
     text-indent:0;
 }
+p.lead.later {
+    margin-top:1em;
+    padding-top:1em;
+    border-top:1px solid #ddd;
+}
 p.small {
     font-size: .7em;
     line-height: 1.6em;
@@ -371,6 +376,12 @@ div#next-chapter h2 {
     margin:.3em 1.7em .3em .5em;
     letter-spacing: .02em;
 }
+div#next-chapter a {
+    font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color:#222222;
+    margin:.3em 1.7em .3em .5em;
+}
 div#next-chapter:after {
     width: 0; 
     height: 0;
@@ -387,6 +398,7 @@ div#footer-bar {
     background: black;
     color: white;
     padding: .6em 0 .6em 1.6em;
+    margin-top:2em;
 }
 div#footer-bar ul.social {
     margin:0 auto;
