@@ -18,7 +18,6 @@ nav.top-bar {
     height:28px;
 }
 .opener {
-    background-image: url('./img/chaser-06.jpg');
     background-position:50% 90%; 
     background-repeat:no-repeat; 
     background-size: cover;
@@ -27,6 +26,28 @@ nav.top-bar {
     margin: 0;
     overflow: hidden;
     margin-bottom:2em;
+    opacity: 0;
+}
+.opener1 {
+    background-image: url('./img/el-reno-tornado-world-herald.jpg');
+}
+.opener2 {
+    background-image: url('./img/el-reno-tornado-reuter-road.jpg');
+}
+.opener3 {
+    background-image: url('./img/paul-samaras-storm-chasing.jpg');
+}
+.opener4 {
+    background-image: url('./img/chevy-cobalt-tornado.jpg');
+}
+.opener5 {
+    background-image: url('./img/banner-road-el-reno.jpg');
+}
+.opener6 {
+    background-image: url('./img/tim-samaras-memorial.jpg');
+}
+.opener7 {
+    background-image: url('./img/storm-chaser-silhouette.jpg');
 }
 .opener .openercaption {
     position:absolute;
@@ -205,18 +226,18 @@ p, .row li, .reveal-modal li {
     font-size: 1.375em;
     line-height: 1;
     position: absolute;
-    top: -0.5em;
-    right: -0.5em;
+    top: -0.7em;
+    right: -0.6em;
     color: #eee;
     font-weight: bold;
     cursor: pointer;
-    -webkit-border-radius: .6em;
-    -moz-border-radius: .6em;
-    border-radius: .6em;
+    -webkit-border-radius: .7em;
+    -moz-border-radius: .7em;
+    border-radius: .7em;
     border: 2px solid #eee;
-    width: 1.2em;
-    height: 1.2em;
-    padding: .1em 0 0 .2em;
+    width: 1.4em;
+    height: 1.4em;
+    padding: .2em 0 0 .25em;
     background: #547eb8;
 }
 p.lead {
