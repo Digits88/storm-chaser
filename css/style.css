@@ -12,10 +12,39 @@ nav.top-bar {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
     margin-bottom: 0px;
 }
-
+li.name {
+    position: relative;
+}
+div#name1 {
+    top:.5em;
+    left:.5em;
+    position: absolute;
+    height: 1.8em;
+    width:15em;
+}
+div#name2 {
+    top:.5em;
+    left:.5em;
+    position: absolute;
+    height: 1.8em;
+    width:18em;
+    opacity: 0;
+}
+div#name2 h1 {
+    font-size:1.8em;
+    line-height: 1em;
+    font-weight:300;
+    color:#fff;
+}
 #logoimg {
-    margin:.5em 0 0 .5em;
-    height:28px;
+    margin:.0;
+    height:1.8em;
+}
+#logosmall {
+    margin:0 2em 0 0;
+    height:1.8em;
+    display: inline-block;
+    float:left;
 }
 .opener {
     background-position:50% 90%; 
@@ -29,25 +58,25 @@ nav.top-bar {
     opacity: 0;
 }
 .opener1 {
-    background-image: url('./img/el-reno-tornado-world-herald.jpg');
+    background-image: url('../img/el-reno-tornado-world-herald.jpg');
 }
 .opener2 {
-    background-image: url('./img/el-reno-tornado-reuter-road.jpg');
+    background-image: url('../img/banner-road-el-reno.jpg');
 }
 .opener3 {
-    background-image: url('./img/paul-samaras-storm-chasing.jpg');
+    background-image: url('../img/paul-samaras-storm-chasing.jpg');
 }
 .opener4 {
-    background-image: url('./img/chevy-cobalt-tornado.jpg');
+    background-image: url('../img/chevy-cobalt-tornado.jpg');
 }
 .opener5 {
-    background-image: url('./img/banner-road-el-reno.jpg');
+    background-image: url('../img/el-reno-tornado-reuter-road.jpg');
 }
 .opener6 {
-    background-image: url('./img/tim-samaras-memorial.jpg');
+    background-image: url('../img/tim-samaras-memorial.jpg');
 }
 .opener7 {
-    background-image: url('./img/storm-chaser-silhouette.jpg');
+    background-image: url('../img/storm-chaser-silhouette.jpg');
 }
 .opener .openercaption {
     position:absolute;
@@ -153,7 +182,6 @@ h3.titlespan {
     height:100%;
     position: relative;
 }
-
 div#title1 {
     width:100%;
     height:50%;
@@ -163,14 +191,49 @@ div#title1 {
     position:relative;
     overflow:visible;
 }
-
-div#title1 h3.titlespan {
+div#title3 {
+    width:100%;
+    height:50%;
+    left:40%;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    overflow:visible;
+}
+div#title4 {
+    width:100%;
+    height:50%;
+    left:20%;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    overflow:visible;
+}
+div#title5 {
+    width:100%;
+    height:50%;
+    left:60%;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    overflow:visible;
+}
+div#title6 {
+    width:100%;
+    height:50%;
+    left:25%;
+    text-align: center;
+    margin: 0 auto;
+    position:relative;
+    overflow:visible;
+}
+div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
     bottom:56%;
     position: absolute;
     left:-1.501em;
 }
 
-div#title1 h2.title {
+div#title1 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
     top:55%;
     position: absolute;
     left:-1.6em;
@@ -192,7 +255,7 @@ h1 * {
   	text-transform: uppercase;
 }
 p {
-    text-indent:3em;
+    text-indent:2.5em;
 }
 p, .row li, .reveal-modal li {
   	color: #333;
