@@ -180,30 +180,44 @@ h2.title2 {
     margin: 0 0 20px 20px;
     opacity:0.2;
 }
-
 * {
   	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
   	font-weight: 400;
 }
-
 h1, h2, h3, h1 *, h2 *, h3 * {
   	font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
   	font-weight: 700;
 }
-
 h1 * {
   	text-transform: uppercase;
 }
 p {
     text-indent:3em;
 }
-
 p, .row li, .reveal-modal li {
   	color: #333;
     font-size:1.05em;
     line-height:2em;
     margin-bottom:.25em;
     list-style:circle inside;
+}
+#credits .row {
+    margin-top:2em;
+}
+#credits .row .columns p {
+    text-indent: 0;
+    margin-bottom: .05em;
+}
+#credits .row .columns p:first {
+    margin-top:.1em;
+}
+.reverse h1 {
+    background:#000;
+    color:#fff;
+    padding:.5em;
+    width:100%;
+    text-align: right;
+    margin:0;
 }
 .infobox p, .infobox li {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
