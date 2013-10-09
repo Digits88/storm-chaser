@@ -61,7 +61,7 @@ div#name2 h1 {
     background-image: url('../img/el-reno-tornado-world-herald.jpg');
 }
 .opener2 {
-    background-image: url('../img/banner-road-el-reno.jpg');
+    background-image: url('../img/storm-coming-blue.jpg');
 }
 .opener3 {
     background-image: url('../img/paul-samaras-storm-chasing.jpg');
@@ -389,7 +389,7 @@ p.byline {
     font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
     font-weight: 300;
     font-size:.9em;
-    line-height:2em;
+    line-height:1.8em;
     font-style: italic;
     letter-spacing:.75px;
     position: relative;
@@ -575,9 +575,8 @@ div#footer-bar ul.social li {
     .caption {
         text-indent: 0;
         font-size: .7em;
-        line-height:1.6em;
-        font-weight:400;
-        font-style: italic;
+        line-height:1.8em;
+        font-weight:700;
     }
     blockquote {
         margin-bottom:1.5em;
