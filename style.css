@@ -222,6 +222,12 @@ p, .row li, .reveal-modal li {
     width:8em;
     margin:.5em .5em 1em 1em;
 }
+div.small-6.sidemug {
+    padding-left:0;
+}
+div.small-6.sidemug img {
+    padding-top:1em;
+}
 .reveal-modal .close-reveal-modal {
     font-size: 1.375em;
     line-height: 1;
@@ -377,16 +383,16 @@ blockquote div.attrib {
     left:25%;
     top:10%;
 }
+div.nextwrap {
+    display:block;
+}
 div#next-chapter {
-    position: fixed;
     background-color: #FFFFFF;
-    padding: 10px 20px;
-    bottom:-1.3em;
-    right:0;
-    opacity:0;
-    -moz-box-shadow:    -1px -2px 2px 0px #aaa;
-    -webkit-box-shadow: -1px -2px 2px 0px #aaa;
-    box-shadow:         -1px -2px 2px 0px #aaa;
+    border-top:1px solid #ddd;
+    width:100%;
+    position: relative;
+    margin-top:2em;
+    opacity: 0;
 }
 div#next-chapter h2 {
     font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
@@ -394,14 +400,15 @@ div#next-chapter h2 {
     font-size:1.6em;
     line-height:1em;
     color:#222222;
-    margin:.3em 1.7em .3em .5em;
     letter-spacing: .02em;
+    margin: .75em 2.5em .75em 0;
+    display: block;
+    float:right;
 }
 div#next-chapter a {
     font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
     font-weight: 400;
     color:#222222;
-    margin:.3em 1.7em .3em .5em;
 }
 div#next-chapter:after {
     width: 0; 
@@ -419,7 +426,6 @@ div#footer-bar {
     background: black;
     color: white;
     padding: .6em 0 .6em 1.6em;
-    margin-top:2em;
 }
 div#footer-bar ul.social {
     margin:0 auto;

@@ -14,11 +14,7 @@ derp2();
 
 var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible) {
 	if (visible) {
-		$('#next-chapter').stop().animate({ "bottom": "0" }, 800);
-		$('#next-chapter').animate({ opacity: 1 }, 100);
-	} else {
-		$('#next-chapter').stop().css( "bottom", "-1.3em" );
-		$('#next-chapter').stop().animate({ opacity: 0 }, 100);
+		$('#next-chapter').stop().animate({ opacity: 1}, 700);
 	}
 })};
 derp2();
