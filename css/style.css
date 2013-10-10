@@ -573,8 +573,18 @@ div#footer-bar ul.social li {
 }
 @media (max-width:940px) {
 
-    #logoimg, #logosmall {
-        height:1.2em;
+    #logoimg {
+        height:1.3em;
+    }
+    #logosmall {
+        height: 1.4em;
+        margin: 0 1em 0 0;
+    }
+    div#name2 h1 {
+        font-size:1.4em;
+        line-height: 1em;
+        font-weight:300;
+        color:#fff;
     }
     .opener {
         margin-bottom: 1em;
