@@ -307,18 +307,32 @@ div.small-6.sidemug img {
     padding-top:1em;
 }
 .map-modal {
-    width:80%;
+    width:70%;
 }
-.mapwrap {
+div.mapwrap {
     position: relative;
-    margin:1em;
+    margin:0;
 }
-.mapwrap > .mapheight {
+div.mapwrap > .mapheight {
     width:100%;
     height:0;
     padding-bottom:47.9%;
 }
-.mapwrap > iframe {
+div.mapwrap > iframe {
+    position: absolute;
+    top:0;
+    left:0;
+}
+.insetmapwrap {
+    position: relative;
+    margin:1em 0;
+}
+.insetmapwrap > .vidheight {
+    width:100%;
+    height:0;
+    padding-bottom:56.25%;
+}
+.insetmapwrap > iframe {
     position: absolute;
     top:0;
     left:0;
@@ -627,7 +641,11 @@ div#footer-bar ul.social li {
         left:5%;
         top:5%;
     }
-
+    .map-modal {
+        width:95%;
+        padding:.25em;
+        margin-left:-47.5%;
+    }
     .slides-modal {
         width:90%;
         margin-left:0;
