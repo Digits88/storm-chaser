@@ -81,23 +81,7 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",39000,function(sym
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.$("clockText").html("");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_rewindHover_btn2}","click",function(sym,e){sym.play("starter");});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_rewindHover_btn2}","mouseout",function(sym,e){sym.$("rewindHover_btn2").hide();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_pauseHover_btn2}","click",function(sym,e){sym.stop();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_pauseHover_btn2}","mouseout",function(sym,e){sym.$("pauseHover_btn2").hide();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_playHover_btn2}","click",function(sym,e){sym.play();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_playHover_btn2}","mouseout",function(sym,e){sym.$("playHover_btn2").hide();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_rewind_btn2}","mouseover",function(sym,e){sym.$("rewindHover_btn2").show();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_pause_btn2}","mouseover",function(sym,e){sym.$("pauseHover_btn2").show();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_play_btn2}","mouseover",function(sym,e){sym.$("playHover_btn2").show();});
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",13250,function(sym,e){sym.stop();});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
