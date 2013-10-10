@@ -13,6 +13,11 @@ function revealMap() {
 	$('#fullMap').foundation('reveal', 'open');
 }
 
+function revealBio(bioname) {
+	$('.top-bar, [data-topbar]').css('height', '').removeClass('expanded');
+	$(bioname).foundation('reveal', 'open');
+}
+
 var derp1 = function(){ $('div.opener').bind('inview', function(event, visible) {
 	if (visible) {
 		$(this).stop().animate({ opacity: 1}, 1500);
