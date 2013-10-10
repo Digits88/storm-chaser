@@ -4,7 +4,7 @@
 
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<title>Chasing the Beast &mdash; Chapter 1: Proximity &mdash; The Denver Post</title>
 	
@@ -81,12 +81,12 @@
 						<li class="bottom"><a href="#" data-reveal-id="peopleEdG">Ed Grubb</a></li>
 						<li class="bottom"><a href="#" data-reveal-id="peopleGabeG">Gabe Garfield</a></li>
 						<li class="bottom"><a href="#" data-reveal-id="peopleMarcA">Marc Austin</a></li>
-						<li class="bottom"><a href="#" data-reveal-id="peopleEricF">Erik Fox</a></li>
+						<li class="bottom"><a href="#" data-reveal-id="peopleErikF">Erik Fox</a></li>
 						<li class="bottom"><a href="#" data-reveal-id="peopleDanR">Dan Robinson</a></li>
 					</ul>
 				</li>
 				<li class="divider"></li>
-				<li class="top-top"><a href="#" data-reveal-id="fullMap">Map</a></li>
+				<li class="top-top"><a href="#" onClick="revealMap();">Map</a></li>
 				<li class="divider"></li>
 				<li class="top-top"><a href="video.html">Video</a></li>
 				<li class="divider"></li>
@@ -104,8 +104,8 @@
 <div class="opener opener1 columns">
 	<div class="title">
 		<div id="title1">
-			<h3 class="titlespan">Chasing the Beast|1</h3>
-			<h2 class="title">Proximity</h2>
+			<h3 class="titlespan">Proximity|1</h3>
+			<h2 class="title">Chasing the Beast</h2>
 		</div>
 	</div>
 </div>
@@ -184,7 +184,15 @@
 	<div class="large-8 push-2 columns">
 		<div id="map1" class="insetmapwrap">
 			<div class="insetmapheight"></div>
-			<iframe width="100%" height="100%" src="" frameborder="0" scrolling="no"></iframe>
+			<!--Adobe Edge Runtime-->
+			    <!-- <script type="text/javascript" charset="utf-8" src="./stormChaserMap_edgePreload.js"></script> -->
+			    <style>
+			        .edgeLoad-EDGE-3014757 { visibility:hidden; }
+			    </style>
+			<!--Adobe Edge Runtime End-->
+			<div style="position:absolute;top:0;left:0;width:100%;height:100%;">
+				<div id="Stage" class="EDGE-3014757"></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -204,7 +212,7 @@
 <div class="row">
 	<div class="large-12 nextwrap">
 		<div id="next-chapter">
-			<h2><a href="chapter2.html">Chapter 2 | Forecast</a></h2>
+			<a href="chapter2.html"><h2>Chapter 2 | Forecast</h2></a>
 		</div>
 	</div>
 </div>
@@ -269,10 +277,10 @@
 	<p>A storm chaser from New Baden, Ill., Robinson narrowly escaped the violence of the El Reno tornado. His vehicle preceded the TWISTEX vehicle down Reuter Road by a mere 28 seconds and his video proved crucial in providing clues to the fate of the Samarases and Young.</p>
 	<a class="close-reveal-modal">&#215;</a>
 </div>
-<div id="fullMap" class="reveal-modal map-modal infobox">
+<div id="fullMap" class="reveal-modal map-modal">
 	<div class="mapwrap">
 		<div class="mapheight"></div>
-		<iframe width="100%" height="100%" src="./map/stormChaserMap2.html" frameborder="0" scrolling="no"></iframe>
+			<iframe id="mapframe" src="" frameborder="0" scrolling="no"></iframe>
 	</div>
 	<a class="close-reveal-modal">&#215;</a>
 </div>

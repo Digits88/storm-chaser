@@ -158,7 +158,7 @@ div#name2 h1 {
 }
 
 h2.title {
-    font-size: 7em;
+    font-size: 5em;
     line-height: 1em;
     text-transform: uppercase;
     color: rgba(245,245,255,0.8);
@@ -307,7 +307,8 @@ div.small-6.sidemug img {
     padding-top:1em;
 }
 .map-modal {
-    width:70%;
+    width:65%;
+    margin-left:-32%;
 }
 div.mapwrap {
     position: relative;
@@ -317,13 +318,15 @@ div.mapwrap {
 div.mapwrap > .mapheight {
     width:100%;
     height:0;
-    padding-bottom:47.9%;
+    padding-bottom:49%;
 }
 div.mapwrap > iframe {
     position: absolute;
     top:0;
     left:0;
     overflow:hidden;
+    width:100%;
+    height:100%;
 }
 .insetmapwrap {
     position: relative;
@@ -340,6 +343,8 @@ div.mapwrap > iframe {
     top:0;
     left:0;
     overflow:hidden;
+    width:100%;
+    height:100%;
 }
 .vidwrap {
     position: relative;
@@ -371,7 +376,7 @@ div.mapwrap > iframe {
     width: 1.4em;
     height: 1.4em;
     padding: .2em 0 0 .25em;
-    background: #547eb8;
+    background: #333;
 }
 p.lead {
   	font-size: 1.4em;
@@ -381,8 +386,8 @@ p.lead {
     text-indent:0;
 }
 p.lead.later {
-    margin-top:1em;
-    padding-top:1em;
+    margin-top:2em;
+    padding-top:2em;
     border-top:1px solid #ddd;
 }
 p.small {
@@ -518,14 +523,19 @@ div.attrib {
 }
 div.nextwrap {
     display:block;
+    border-top:1px solid #ddd;
+    margin-top: 2em;
+    opacity: 0;
 }
 div#next-chapter {
     background-color: #FFFFFF;
-    border-top:1px solid #ddd;
-    width:100%;
+    float:right;
     position: relative;
-    margin-top:2em;
-    opacity: 0;
+}
+div#prev-chapter {
+    background-color: #FFFFFF;
+    float:left;
+    position: relative;
 }
 div#next-chapter h2 {
     font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
@@ -534,11 +544,24 @@ div#next-chapter h2 {
     line-height:1em;
     color:#222222;
     letter-spacing: .02em;
-    margin: .75em 2.5em .75em 0;
+    margin: 0;
+    padding: .75em 2.5em .75em 0;
     display: block;
     float:right;
 }
-div#next-chapter a {
+div#prev-chapter h2 {
+    font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size:1.6em;
+    line-height:1em;
+    color:#222222;
+    letter-spacing: .02em;
+    margin: 0;
+    padding: .75em 0 .75em 2.5em;
+    display: block;
+    float:left;
+}
+div#next-chapter a, div#prev-chapter a {
     font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif;
     font-weight: 400;
     color:#222222;
@@ -554,7 +577,17 @@ div#next-chapter:after {
     border-style: solid;
     border-color: transparent #222;
 }
-
+div#prev-chapter:before {
+    width: 0; 
+    height: 0;
+    position:absolute;
+    content:"";
+    top:1.4em;
+    left:1.5em;
+    border-width:.6em 1.2em .6em 0;
+    border-style: solid;
+    border-color: transparent #222;
+}
 div#footer-bar {
     background: black;
     color: white;
@@ -590,7 +623,7 @@ div#footer-bar ul.social li {
         margin-bottom: 1em;
     }
     h2.title {
-        font-size: 3.5em;
+        font-size: 2.3em;
     }
     .top-bar-section ul li.social a {
         padding:1em 40%;
@@ -607,12 +640,14 @@ div#footer-bar ul.social li {
         font-size: 1.5em;
     }
 
-    div#title1 h3.titlespan {
+    div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
         left:-1.05em;
     }
-
-    div#title1 h2.title {
-        left:-1.4em;
+    div#title1 h2.title, div#title3 h2.title, div#title5 h2.title {
+        left:-2.8em;
+    }
+    div#title4 h2.title, div#title6 h2.title  {
+        left:-1.7em;
     }
     .infobox .bio-mug {
         width:6em;
@@ -656,9 +691,9 @@ div#footer-bar ul.social li {
         top:5%;
     }
     .map-modal {
-        width:95%;
+        width:90%;
         padding:.25em;
-        margin-left:-47.5%;
+        margin-left:-45%;
     }
     .slides-modal {
         width:90%;

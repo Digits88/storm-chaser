@@ -5,6 +5,14 @@ function revealone() {
 	createSlidesOne();
 }
 
+function revealMap() {
+	$('.top-bar, [data-topbar]').css('height', '').removeClass('expanded');
+	$('#fullMap').bind('opened', function() {
+		$('#mapframe').attr( "src", "./stormChaserMap.html" );	
+	});
+	$('#fullMap').foundation('reveal', 'open');
+}
+
 var derp1 = function(){ $('div.opener').bind('inview', function(event, visible) {
 	if (visible) {
 		$(this).stop().animate({ opacity: 1}, 1500);
@@ -21,14 +29,16 @@ derp1();
 
 var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible) {
 	if (visible) {
-		$('#next-chapter').stop().animate({ opacity: 1}, 700);
+		/* $('#next-chapter').stop().animate({ opacity: 1}, 700);
+		$('#prev-chapter').stop().animate({ opacity: 1}, 700); */
+		$('.nextwrap').stop().animate({ opacity: 1}, 700);
 	}
 })};
 derp2();
 
-var derp3 = function(){ $('#map1').one('inview', function(event, visible) {
+/* var derp3 = function(){ $('#map1').one('inview', function(event, visible) {
 	if (visible) {
-		$(this).children('iframe').attr( "src", "./map/stormChaserMapPart1.html");
+		AdobeEdge.getComposition('EDGE-3014757').getStage().play(0);
 	}
 })};
-derp3();
+derp3(); */
