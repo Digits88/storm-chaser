@@ -5,7 +5,7 @@ function revealone() {
 	createSlidesOne();
 }
 
-var derp2 = function(){ $('div.opener').bind('inview', function(event, visible) {
+var derp1 = function(){ $('div.opener').bind('inview', function(event, visible) {
 	if (visible) {
 		$(this).stop().animate({ opacity: 1}, 1500);
 	}
@@ -17,7 +17,7 @@ var derp2 = function(){ $('div.opener').bind('inview', function(event, visible) 
 		$('#name2').stop().animate({opacity: 0}, 150);
 	}
 })};
-derp2();
+derp1();
 
 var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible) {
 	if (visible) {
@@ -25,3 +25,10 @@ var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible)
 	}
 })};
 derp2();
+
+var derp3 = function(){ $('#map1').one('inview', function(event, visible) {
+	if (visible) {
+		$(this).children('iframe').attr( "src", "./map/stormChaserMapPart1.html");
+	}
+})};
+derp3();
