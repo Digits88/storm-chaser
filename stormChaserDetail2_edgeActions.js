@@ -23,11 +23,25 @@ Symbol.bindElementAction(compId,symbolName,"document","compositionReady",functio
 rescale=rescaleHeight;stage.css('transform','scale('+rescale+')');stage.css('-o-transform','scale('+rescale+')');stage.css('-ms-transform','scale('+rescale+')');stage.css('-webkit-transform','scale('+rescale+')');stage.css('-moz-transform','scale('+rescale+')');stage.css('-o-transform','scale('+rescale+')');parent.height(stageHeight*rescale);}
 $(window).on('resize',function(){scaleStage();});$(document).ready(function(){scaleStage();});});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","click",function(sym,e){sym.play(1);});
+Symbol.bindElementAction(compId,symbolName,"${_playHover_btn2c}","click",function(sym,e){sym.play();var childSymbols=sym.getChildSymbols();for(var i=0;i<childSymbols.length;i++)
+childSymbols[i].play();});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","mouseout",function(sym,e){sym.$("bigPlayHover_btn").hide();});
+Symbol.bindElementAction(compId,symbolName,"${_playHover_btn2c}","mouseout",function(sym,e){sym.$("playHover_btn2c").hide();});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_bigPlay_btn}","mouseover",function(sym,e){sym.$("bigPlayHover_btn").show();});
+Symbol.bindElementAction(compId,symbolName,"${_pauseHover_btn2c}","click",function(sym,e){sym.stop();var childSymbols=sym.getChildSymbols();for(var i=0;i<childSymbols.length;i++)
+childSymbols[i].stop();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_pauseHover_btn2c}","mouseout",function(sym,e){sym.$("pauseHover_btn2c").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_rewindHover_btn2c}","click",function(sym,e){sym.play(0);});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_rewindHover_btn2c}","mouseout",function(sym,e){sym.$("rewindHover_btn2c").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_play_btn2c}","mouseover",function(sym,e){sym.$("playHover_btn2c").show();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_pause_btn2c}","mouseover",function(sym,e){sym.$("pauseHover_btn2c").show();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_rewind_btn2c}","mouseover",function(sym,e){sym.$("rewindHover_btn2c").show();});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
@@ -35,11 +49,7 @@ Symbol.bindElementAction(compId,symbolName,"${_bigPlay_btn}","mouseover",functio
 //=========================================================
 
 //Edge symbol: 'detailMap'
-(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${_showSatView}","click",function(sym,e){sym.$("detailMapSat2").show();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_hideSatView}","click",function(sym,e){sym.$("detailMapSat2").hide();});
-//Edge binding end
-})("detailMap");
+(function(symbolName){})("detailMap");
 //Edge symbol end:'detailMap'
 
 //=========================================================
