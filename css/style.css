@@ -2,11 +2,24 @@ html, body {
     height:100%;
     width: 100%;
 }
-
 body {
 	background: rgba(255,255,255,1);
 }
-
+.teaser p {
+    color: rgba(245,245,255,0.8);
+    font-size:.8em;
+    width:100%;
+    padding:1.5em 3em 0;
+    text-indent: 0;
+    line-height:1.5em;
+}
+.teaser div#title1 h2.title {
+    top:31%;
+    left:-3.5em;
+}
+.teaser div#title1 h3.titlespan {
+    bottom:76%;
+}
 nav.top-bar {
     z-index: 99;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
