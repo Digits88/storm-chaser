@@ -88,51 +88,12 @@ div#name2 h1 {
     height:0;
     clear:both;
 }
-
-.overlaywrap {
-    height: 600px;
-    max-height: 1000px;
-    width: 100%;
-    position:relative;
-    margin-bottom:20px;
-    overflow:hidden;
-}
-
-.overlaywrap img {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    margin-top:-300px;
-}
-
-.overlaywrap div.captionoverlay {
-    width:100%;
-    padding:20px;
-    margin:0 auto;
-    z-index: 60;
-}
-
-.overlaywrap div.captionwrap {
-    position: absolute;
-    bottom: 250px;
-    width:100%;
-    z-index:20;
-    /* background:rgba(0,0,0,0.6); */
-}
-
-.white {
-	background-color:rgba(255,255,255,0.1);
-	padding-top: 10px;
-} 
-
 .top-bar-section ul {
     background: black;
 }
 .top-bar-section ul li.bottom a {
     padding:.5em .8em;
 }
-
 .top-bar-section ul li a {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
     text-transform: none;
@@ -156,7 +117,6 @@ div#name2 h1 {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
     color: #FFFFFF;
 }
-
 h2.title {
     font-size: 5em;
     line-height: 1em;
@@ -165,7 +125,6 @@ h2.title {
     margin:0;
     height:0;
 }
-
 h3.titlespan {
     font-family: 'Yanone Kaffeesatz', Helvetica, Arial, sans-serif !important;
     font-weight: 300;
@@ -176,15 +135,16 @@ h3.titlespan {
     margin:0;
     height:0;
 }
-
 .opener div.title {
     width:100%;
     height:100%;
     position: relative;
 }
+div.title #title1, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
+    height:50%;
+}
 div#title1 {
     width:100%;
-    height:50%;
     left:50%;
     text-align: center;
     margin: 0 auto;
@@ -193,7 +153,6 @@ div#title1 {
 }
 div#title3 {
     width:100%;
-    height:50%;
     left:40%;
     text-align: center;
     margin: 0 auto;
@@ -202,7 +161,6 @@ div#title3 {
 }
 div#title4 {
     width:100%;
-    height:50%;
     left:20%;
     text-align: center;
     margin: 0 auto;
@@ -211,7 +169,6 @@ div#title4 {
 }
 div#title5 {
     width:100%;
-    height:50%;
     left:60%;
     text-align: center;
     margin: 0 auto;
@@ -220,7 +177,6 @@ div#title5 {
 }
 div#title6 {
     width:100%;
-    height:50%;
     left:25%;
     text-align: center;
     margin: 0 auto;
@@ -234,14 +190,9 @@ div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#t
 }
 
 div#title1 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
-    top:55%;
+    top:58%;
     position: absolute;
     left:-1.6em;
-}
-
-h2.title2 {
-    margin: 0 0 20px 20px;
-    opacity:0.2;
 }
 * {
   	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -346,9 +297,20 @@ div.mapwrap > iframe {
     width:100%;
     height:100%;
 }
+.brightwrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.brightwrap > div {
+    width:100%!important;
+    height:100%!important;
+}
+.videopage .vidwrap {
+    margin:1em 0;
+}
 .vidwrap {
     position: relative;
-    margin:1em 0;
 }
 .vidwrap > .vidheight {
     width:100%;
@@ -408,7 +370,6 @@ a, a *, * a, a:visited, a:visited *, * a:visited {
 a:hover, * a:hover, a:hover * {
     color:IndianRed;
 }
-
 p.byline {
     font-style:italic;
     color:white;
@@ -417,12 +378,10 @@ p.byline {
     margin:0;
     font-size:.8em;
 }
-
 .photorow {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
-
 .caption {
   	font-size: 1em;
     line-height:1.8em;
@@ -436,8 +395,36 @@ p.byline {
     text-indent:0;
     margin-bottom:1em;
 }
+a p.mugcap {
+    color:SteelBlue;
+}
+a p.mugcap:hover {
+    color:IndianRed;
+}
 p.caption.mugcap {
-    font-size:1.2em;
+    font-size:1em;
+    font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    line-height:1.9em;
+    font-style: italic;
+    letter-spacing:.75px;
+    text-indent:0;
+    margin-top:.2em;
+    overflow:visible;
+    cursor: pointer;
+}
+p.caption.mugcap:after {
+    content:"";
+    display:block;
+    float:right;
+    background:url('../img/more-info.png') transparent no-repeat;
+    background-size: cover;
+    height:1.2em;
+    width: 1.2em;
+    margin-left: .3em;
+    margin-top: .3em;
+    overflow: visible;
+    cursor: pointer;
 }
 .caption span.photocred {
     color: #222222;
@@ -499,11 +486,10 @@ div.attrib {
     line-height:1.9em;
     font-style: italic;
     letter-spacing:1px;
-    margin-bottom:1em;
+    margin:.5em 0 1em;
     text-indent: 0;
-    width:100%;
     text-align: right;
-    padding-right: 5em;
+    padding-right: 2em;
 }
 
 .reveal-modal {
@@ -668,7 +654,14 @@ div#footer-bar ul.social li {
         font-weight: 700;
         text-indent:0;
     }
+    .photorow {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
     .photorow img {
+        margin-bottom:.5em;
+    }
+    .vidwrap {
         margin-bottom:.5em;
     }
     .caption {
@@ -676,13 +669,6 @@ div#footer-bar ul.social li {
         font-size: .7em;
         line-height:1.8em;
         font-weight:700;
-    }
-    blockquote {
-        margin-bottom:1.5em;
-    }
-    blockquote div.attrib {
-        right:1.5em;
-        bottom:.5em;
     }
     .people-modal {
         width:90%;
@@ -703,5 +689,16 @@ div#footer-bar ul.social li {
     }
     div#footer-bar ul.social {
         display:none;
+    }
+}
+@media (max-width:940px) and (orientation:landscape) {
+    div.title #title1, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
+        height:80%;
+    }
+    .infobox .bio-mug {
+        width:6em;
+    }
+    .infoxbox p {
+        line-height: 1.5em;
     }
 }
