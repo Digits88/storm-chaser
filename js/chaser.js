@@ -1,6 +1,6 @@
 $(document).foundation('reveal', {animation: 'fade', animationspeed: 200});
 
-function revealone() {
+function revealOne() {
 	$('#slides-1').foundation('reveal', 'open');
 	createSlidesOne();
 }

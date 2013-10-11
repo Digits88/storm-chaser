@@ -688,6 +688,9 @@ div#footer-bar ul.social li {
     div#footer-bar ul.social {
         display:none;
     }
+    .reveal-modal .close-reveal-modal {
+        padding: .25em 0 0 .3em;
+    }
 }
 @media (max-width:940px) and (orientation:landscape) {
     div.title #title1, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
