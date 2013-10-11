@@ -191,15 +191,14 @@ div#title6 {
     overflow:visible;
 }
 div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
-    bottom:56%;
+    top:54%;
     position: absolute;
-    left:-1.501em;
+    left:1.5em;
 }
-
 div#title1 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
-    top:58%;
+    top:28%;
     position: absolute;
-    left:-1.6em;
+    left:-3em;
 }
 * {
   	font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
@@ -530,7 +529,7 @@ div.attrib {
     position:fixed;
 }
 .people-modal {
-    width:40%;
+    width:50%;
     margin-left:0;
     left:30%;
     top:15%;
@@ -624,8 +623,12 @@ div#footer-bar ul.social li {
     float:left;
     display: inline-block;
 }
+@media (orientation:portrait) {
+    div#title1 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
+        top:42%;
+    }
+}
 @media (max-width:940px) {
-
     #logoimg {
         height:1.3em;
     }
@@ -642,9 +645,6 @@ div#footer-bar ul.social li {
     .opener {
         margin-bottom: 1em;
     }
-    h2.title {
-        font-size: 2.3em;
-    }
     .top-bar-section ul li.social a {
         padding:1em 40%;
     }
@@ -659,9 +659,11 @@ div#footer-bar ul.social li {
     h3.titlespan {
         font-size: 1.5em;
     }
-
+    h2.title {
+        font-size: 2.3em;
+    }
     div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
-        left:-1.05em;
+        left:1.6em;
     }
     div#title1 h2.title, div#title3 h2.title, div#title5 h2.title {
         left:-2.8em;
@@ -723,9 +725,21 @@ div#footer-bar ul.social li {
         padding: .25em 0 0 .3em;
     }
 }
-@media (max-width:940px) and (orientation:landscape) {
+@media (max-width:540px) and (orientation:landscape) {
+    h3.titlespan {
+        font-size: 1.3em;
+    }
+    h2.title {
+        font-size: 2em;
+    }
     div.title #title1, div.title #title3, div.title #title4, div.title #title5, div.title #title6 {
-        height:80%;
+        height:100%;
+    }
+    div#title1 h3.titlespan, div#title3 h3.titlespan, div#title4 h3.titlespan, div#title5 h3.titlespan, div#title6 h3.titlespan {
+        top:60%;
+    }
+    div#title1 h2.title, div#title3 h2.title, div#title4 h2.title, div#title5 h2.title, div#title6 h2.title {
+        top:33%;
     }
     .infobox .bio-mug {
         width:6em;
