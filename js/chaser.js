@@ -5,14 +5,6 @@ function revealone() {
 	createSlidesOne();
 }
 
-function revealMap() {
-	$('.top-bar, [data-topbar]').css('height', '').removeClass('expanded');
-	$('#fullMap').bind('opened', function() {
-		$('#mapframe').attr( "src", "./stormChaserMap.html" );	
-	});
-	$('#fullMap').foundation('reveal', 'open');
-}
-
 function revealBio(bioname) {
 	$('.top-bar, [data-topbar]').css('height', '').removeClass('expanded');
 	$(bioname).foundation('reveal', 'open');
