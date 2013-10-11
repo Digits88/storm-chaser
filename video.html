@@ -268,9 +268,8 @@
 <span class="videopage">
 <div class="row">
 	<div class="large-8 columns">
-		<div class="vidwrap">
-			<div class="vidheight"></div>
-			<div class="brightwrap">
+		<div class="vidwrap brightwrap">
+			<div class="vidheight">
 				<div style="display:none"></div>
 				<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 				<object id="myExperience2727393180001" class="BrightcoveExperience">
@@ -282,10 +281,13 @@
 					<param name="isVid" value="true" />
 					<param name="isUI" value="true" />
 					<param name="dynamicStreaming" value="true" />
-
+					<param name="includeAPI" value="true" />
+					<param name="templateLoadHandler" value="onTemplateLoaded" />
+					<param name="templateReadyHandler" value="onTemplateReady" />
 					<param name="@videoPlayer" value="2727393180001" />
 				</object>
 				<script type="text/javascript">brightcove.createExperiences();</script>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -293,9 +295,8 @@
 
 <div class="row">
 	<div class="large-8 columns">
-		<div class="vidwrap">
-			<div class="vidheight"></div>
-			<div class="brightwrap">
+		<div class="vidwrap brightwrap">
+			<div class="vidheight">
 				<div style="display:none"></div>
 				<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
 				<object id="myExperience2727503831001" class="BrightcoveExperience" style="position:absolute;top:0;left:0;">
@@ -307,10 +308,13 @@
 					<param name="isVid" value="true" />
 					<param name="isUI" value="true" />
 					<param name="dynamicStreaming" value="true" />
-
+					<param name="includeAPI" value="true" />
+					<param name="templateLoadHandler" value="onTemplateLoaded" />
+					<param name="templateReadyHandler" value="onTemplateReady" />
 					<param name="@videoPlayer" value="2727503831001" />
 				</object>
 				<script type="text/javascript">brightcove.createExperiences();</script>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -508,6 +512,14 @@
 
 	<script>
 		$(document).foundation();
+
+        // resizing function - newWidth is percentage of content width as a decimal value
+        BCL.resizePlayer = function(newWidth) {
+            var $BCLcontainingBlock = $('.brightwrap');
+            $BCLcontainingBlock.width($('.brightbox').width() * newWidth);
+            BCL.experienceModule.setSize($BCLcontainingBlock.width(),$BCLcontainingBlock.height());
+            BCL.currentPlayerWidth = newWidth;
+        }
 	</script>
 	<script type="text/javascript">
 	var _sf_async_config={};

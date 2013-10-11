@@ -34,16 +34,7 @@ derp1();
 
 var derp2 = function(){ $('#footer-bar').bind('inview', function(event, visible) {
 	if (visible) {
-		/* $('#next-chapter').stop().animate({ opacity: 1}, 700);
-		$('#prev-chapter').stop().animate({ opacity: 1}, 700); */
-		$('.nextwrap').stop().animate({ opacity: 1}, 700);
+		$('.nextwrap').stop().animate({ opacity: 1}, 500);
 	}
 })};
 derp2();
-
-/* var derp3 = function(){ $('#map1').one('inview', function(event, visible) {
-	if (visible) {
-		AdobeEdge.getComposition('EDGE-3014757').getStage().play(0);
-	}
-})};
-derp3(); */
