@@ -23,6 +23,12 @@ Symbol.bindElementAction(compId,symbolName,"document","compositionReady",functio
 rescale=rescaleHeight;stage.css('transform','scale('+rescale+')');stage.css('-o-transform','scale('+rescale+')');stage.css('-ms-transform','scale('+rescale+')');stage.css('-webkit-transform','scale('+rescale+')');stage.css('-moz-transform','scale('+rescale+')');stage.css('-o-transform','scale('+rescale+')');parent.height(stageHeight*rescale);}
 $(window).on('resize',function(){scaleStage();});$(document).ready(function(){scaleStage();});});
 //Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","click",function(sym,e){sym.play(1);});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","mouseout",function(sym,e){sym.$("bigPlayHover_btn").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_bigPlay_btn}","mouseover",function(sym,e){sym.$("bigPlayHover_btn").show();});
+//Edge binding end
 })("stage");
 //Edge symbol end:'stage'
 

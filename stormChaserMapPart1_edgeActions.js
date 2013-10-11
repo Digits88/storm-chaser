@@ -79,7 +79,7 @@ Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",38000,function(sym
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",39000,function(sym,e){sym.$("clockText").html("6:42 p.m.");});
 //Edge binding end
-Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.stop();sym.$("clockText").html("");});
+Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",0,function(sym,e){sym.$("clockText").html("");sym.stop();});
 //Edge binding end
 Symbol.bindTriggerAction(compId,symbolName,"Default Timeline",13250,function(sym,e){sym.stop();});
 //Edge binding end
@@ -95,4 +95,17 @@ $(window).on('resize',function(){scaleStage();});$(document).ready(function(){sc
 //Edge symbol: 'Preloader'
 (function(symbolName){})("Preloader");
 //Edge symbol end:'Preloader'
+
+//=========================================================
+
+//Edge symbol: 'bigPlay_button'
+(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${_bigPlay_btn}","mouseover",function(sym,e){sym.$("bigPlayHover_btn").show();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","click",function(sym,e){sym.play(1);sym.getParentSymbol().play(1)
+sym.$("bigPlayHover_btn").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","mouseout",function(sym,e){sym.$("bigPlayHover_btn").hide();});
+//Edge binding end
+})("bigPlay_button");
+//Edge symbol end:'bigPlay_button'
 })(jQuery,AdobeEdge,"EDGE-3014757");
