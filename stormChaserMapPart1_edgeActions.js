@@ -87,6 +87,24 @@ Symbol.bindElementAction(compId,symbolName,"document","compositionReady",functio
 rescale=rescaleHeight;stage.css('transform','scale('+rescale+')');stage.css('-o-transform','scale('+rescale+')');stage.css('-ms-transform','scale('+rescale+')');stage.css('-webkit-transform','scale('+rescale+')');stage.css('-moz-transform','scale('+rescale+')');stage.css('-o-transform','scale('+rescale+')');parent.height(stageHeight*rescale);}
 $(window).on('resize',function(){scaleStage();});$(document).ready(function(){scaleStage();});});
 //Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_playHover_btn2}","click",function(sym,e){sym.play();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_playHover_btn2}","mouseout",function(sym,e){sym.$("playHover_btn2").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_pauseHover_btn2}","click",function(sym,e){sym.stop();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_pauseHover_btn2}","mouseout",function(sym,e){sym.$("pauseHover_btn2").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_rewindHover_btn2}","click",function(sym,e){sym.play("starter");});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_rewindHover_btn2}","mouseout",function(sym,e){sym.$("rewindHover_btn2").hide();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_play_btn2}","mouseover",function(sym,e){sym.$("playHover_btn2").show();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_pause_btn2}","mouseover",function(sym,e){sym.$("pauseHover_btn2").show();});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_rewind_btn2}","mouseover",function(sym,e){sym.$("rewindHover_btn2").show();});
+//Edge binding end
 })("stage");
 //Edge symbol end:'stage'
 
@@ -95,17 +113,4 @@ $(window).on('resize',function(){scaleStage();});$(document).ready(function(){sc
 //Edge symbol: 'Preloader'
 (function(symbolName){})("Preloader");
 //Edge symbol end:'Preloader'
-
-//=========================================================
-
-//Edge symbol: 'bigPlay_button'
-(function(symbolName){Symbol.bindElementAction(compId,symbolName,"${_bigPlay_btn}","mouseover",function(sym,e){sym.$("bigPlayHover_btn").show();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","click",function(sym,e){sym.play(1);sym.getParentSymbol().play(1)
-sym.$("bigPlayHover_btn").hide();});
-//Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_bigPlayHover_btn}","mouseout",function(sym,e){sym.$("bigPlayHover_btn").hide();});
-//Edge binding end
-})("bigPlay_button");
-//Edge symbol end:'bigPlay_button'
 })(jQuery,AdobeEdge,"EDGE-3014757");
