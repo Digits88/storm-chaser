@@ -120,6 +120,7 @@ h2.title {
     font-size: 5em;
     line-height: 1em;
     text-transform: uppercase;
+    letter-spacing:1px;
     color: #f5f5ff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);
@@ -133,6 +134,7 @@ h3.titlespan {
     font-size: 3em;
     line-height: 1em;
     text-transform:none;
+    letter-spacing:1px;
     color: #f5f5ff;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     filter: alpha(opacity=80);

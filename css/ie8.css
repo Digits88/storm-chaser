@@ -142,7 +142,7 @@
 .lt-ie9 .top-bar {
   background: #2f2f2f;
   *zoom: 1;
-  overflow: visible; 
+  /* overflow: visible; */
 }
 .lt-ie9 .top-bar:before, .lt-ie9 .top-bar:after {
   content: " ";
@@ -244,3 +244,14 @@
   right: 0; 
 }
 .lt-ie9 .top-bar-section ul.right li .dropdown li .dropdown { right: 100%; }
+
+.lt-ie9 .top-bar-section .top-bar-menu li:hover .dropdown {
+	visibility: visible;
+}
+
+/* Display bio mugs like a big screen no matter what */
+.hide-for-small { display:inherit!important; }
+.hide-for-medium-up { display:none!important; }
+/* no videos  :-( */
+video { display:none; }
+.brightwrap { display:none;}
