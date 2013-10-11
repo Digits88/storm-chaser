@@ -4,21 +4,7 @@ html, body {
 }
 body {
 	background: rgba(255,255,255,1);
-}
-.teaser p {
-    color: rgba(245,245,255,0.8);
-    font-size:.8em;
-    width:100%;
-    padding:1.5em 3em 0;
-    text-indent: 0;
-    line-height:1.5em;
-}
-.teaser div#title1 h2.title {
-    top:31%;
-    left:-3.5em;
-}
-.teaser div#title1 h3.titlespan {
-    bottom:76%;
+    background: #fff;
 }
 nav.top-bar {
     z-index: 99;
@@ -134,6 +120,9 @@ h2.title {
     font-size: 5em;
     line-height: 1em;
     text-transform: uppercase;
+    color: #f5f5ff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
     color: rgba(245,245,255,0.8);
     margin:0;
     height:0;
@@ -144,6 +133,9 @@ h3.titlespan {
     font-size: 3em;
     line-height: 1em;
     text-transform:none;
+    color: #f5f5ff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
     color: rgba(245,245,255,0.8);
     margin:0;
     height:0;
