@@ -229,6 +229,13 @@ p, .row li, .reveal-modal li {
     text-indent: 0;
     margin-bottom: .05em;
 }
+#credits p strong a {
+    color:#222;
+    font-weight:700;
+}
+#credits p strong a:hover {
+    color:SteelBlue;
+}
 #credits .row .columns p:first {
     margin-top:.1em;
 }
