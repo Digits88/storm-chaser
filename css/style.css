@@ -35,6 +35,11 @@ div#name2 h1 {
     font-weight:300;
     color:#fff;
 }
+p.byline {
+    text-indent:0;
+    font-size:.9em;
+    margin-bottom:4em;
+}
 #logoimg {
     margin:.0;
     height:1.8em;
@@ -372,14 +377,6 @@ a, a *, * a, a:visited, a:visited *, * a:visited {
 
 a:hover, * a:hover, a:hover * {
     color:IndianRed;
-}
-p.byline {
-    font-style:italic;
-    color:white;
-    opacity:.9;
-    font-weight:normal;
-    margin:0;
-    font-size:.8em;
 }
 .photorow {
     margin-top: 2em;
